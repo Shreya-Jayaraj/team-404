@@ -2,8 +2,10 @@
 # Project Name
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. Name [Embed personal github URL]
-2. Name [Embed perosnal github URL]
+1. Devika Rajeevan [https://github.com/mummylovestocode]
+2. Shreya Jayaraj [https://github.com/Shreya-Jayaraj]
+3. Amarthya Shekhar [https://github.com/amarthya01]
+4. Diya Pratheep [https://github.com/NotaWhiteHatJr]
 ## Team Id
 Team id here
 ## Link to product walkthrough
