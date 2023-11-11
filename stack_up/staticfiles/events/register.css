@@ -1,0 +1,50 @@
+body {
+    font-family: system-ui;
+    background: linear-gradient(to bottom, darkorchid, darken(darkorchid, 15%));
+    color: black;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: lavender;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-outline-info {
+    background-color: transparent;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+
+.btn-outline-info:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.text-muted {
+    color: #888;
+}
