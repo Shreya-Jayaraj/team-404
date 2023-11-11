@@ -5,6 +5,6 @@ from django.contrib.auth.models import User
 class Event(models.Model):
     title = models.CharField(max_length = 100)
     content = models.TextField()
-    date = models.DateTimeField(default=timezone.now().date)
+    date = models.DateTimeField(default=timezone.now())
     organization = models.ForeignKey(User, on_delete=models.CASCADE)
 
