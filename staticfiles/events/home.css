@@ -1,0 +1,51 @@
+body {
+    font-family: system-ui;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.media {
+    background: lavender;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.article-title {
+    color: #333;
+    text-decoration: none;
+}
+
+.article-content {
+    color: #555;
+}
+
+.text-muted {
+    color: #888;
+}
