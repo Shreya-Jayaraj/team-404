@@ -22,7 +22,7 @@ class EventListView(ListView):
 class EventDetailView(DetailView):
     model = Event
 
-class EventCreateView(CreateView):
+class EventCreateView(LoginRequiredMixin,CreateView):
     model = Event
     fields = ['title','content','date']
 
