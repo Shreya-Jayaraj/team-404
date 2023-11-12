@@ -7,7 +7,7 @@
     {% for event in events %}
         <article class="media content-section">
           <div class="media-body">
-            <img class="account-img" src="{{ event.image.url }}">
+            <img class="rounded-circle article-img" src="{{ event.image.url }}">
             <div class="article-metadata">
               <a class="mr-2" >Hosted By : {{ event.organization }}</a>
               <small class="text-muted"> Happening On : {{ event.date|date:"F d, Y" }}</small>  
