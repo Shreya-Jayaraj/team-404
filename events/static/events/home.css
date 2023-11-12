@@ -20,7 +20,7 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0 15px;
 }
 
@@ -40,13 +40,13 @@ nav a {
 
 .article-title {
     color: #333;
-    text-decoration: none;
+    text-decoration: wavy;
 }
 
 .article-content {
-    color: #555;
+    color: #272222;
 }
 
 .text-muted {
-    color: #888;
+    color: #5a4f4f;
 }
