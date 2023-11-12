@@ -30,6 +30,7 @@ class Migration(migrations.Migration):
                 ("title", models.CharField(max_length=100)),
                 ("content", models.TextField()),
                 ("date", models.DateTimeField(default=django.utils.timezone.now)),
+                
                 (
                     "organization",
                     models.ForeignKey(
