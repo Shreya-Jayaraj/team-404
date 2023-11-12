@@ -7,7 +7,7 @@ class Event(models.Model):
     content = models.TextField()
     date = models.DateField()
     organization = models.ForeignKey(User, on_delete=models.CASCADE)
-    image = models.ImageField(default = 'default.jpg', upload_to = 'profile_pics')
+    image = models.ImageField(default = 'default.jpg', upload_to = 'events_pics')
 
     def __str__(self):
         return self.title
