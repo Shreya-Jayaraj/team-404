@@ -14,4 +14,7 @@ class Event(models.Model):
     
     def get_absolute_url(self):
         return reverse('event-detail', kwargs={'pk':self.pk})
+    
+class Logo(models.Model):
+    image = models.ImageField(default = 'logo.jpg')
 
