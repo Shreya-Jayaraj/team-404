@@ -10,9 +10,8 @@ from django.views.generic import (
 )
 
 def home(request):
-    logos = Logo.objects.first()
     events = { 'events' : Event.objects.all()}
-    context= {'events': events, 'logo':logos}
+    context= {'events': events}
     return render(request,'events/home.html', context)
 
 class EventListView(ListView):
