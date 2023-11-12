@@ -6,7 +6,7 @@ from django.views.generic import (
     DetailView,
     CreateView,
     UpdateView,
-    DeleteView
+    DeleteView,
 )
 
 def home(request):
@@ -22,7 +22,7 @@ class EventListView(ListView):
 class EventDetailView(DetailView):
     model = Event
 
-class EventCreateView(CreateView):
+class EventCreateView(LoginRequiredMixin,CreateView):
     model = Event
     fields = ['title','content','date']
 
@@ -30,5 +30,40 @@ class EventCreateView(CreateView):
         form.instance.organization = self.request.user
         return super().form_valid(form)
 
+class EventUpdateView(LoginRequiredMixin,UpdateView):
+    model = Event
+    fields = ['title','content','date']
+
+    def form_valid(self, form):
+        form.instance.organization = self.request.user
+        return super().form_valid(form)
+
+class EventUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Event
+    fields = ['title', 'content','date']
+
+    def form_valid(self, form):
+        form.instance.organization = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        event = self.get_object()
+        if self.request.user == event.organization:
+            return True
+        return False
+
+
+class EventDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Event
+    success_url = '/'
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.organization:
+            return True
+        return False
+    
 def about(request):
     return render(request, 'events/about.html', {'title': 'About'})
+
+
