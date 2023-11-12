@@ -11,6 +11,7 @@ urlpatterns = [
     path('event/<int:pk>/update', EventUpdateView.as_view() , name='event-update'),
     path('event/<int:pk>/delete', EventDeleteView.as_view() , name='event-delete'),
     path('about/', views.about, name='events-about'),
+    
 ]
 
 if settings.DEBUG:
