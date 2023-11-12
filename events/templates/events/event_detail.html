@@ -6,6 +6,7 @@
 {% block content %}
     <article class="media content-section">
         <div class="media-body">
+            <img class=" account-img" src="{{ event.image.url }}">
         <div class="article-metadata">
             <a class="mr-2" href="#">{{ object.organization }}</a>
             <small class="text-muted">{{ object.date|date:"F d, Y" }}</small>  

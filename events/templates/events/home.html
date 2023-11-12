@@ -7,13 +7,17 @@
     {% for event in events %}
         <article class="media content-section">
           <div class="media-body">
+            <img class="rounded-circle article-img" src="{{ event.image.url }}">
             <div class="article-metadata">
               <a class="mr-2" >Hosted By : {{ event.organization }}</a>
               <small class="text-muted"> Happening On : {{ event.date|date:"F d, Y" }}</small>  
             </div>
             <h2><a class="article-title" href="{% url 'event-detail' event.id %}">{{ event.title }}</a></h2>
+<<<<<<< HEAD
             <p class="article-content">{{ event.content }}</p>
              <!--<a class="article-content" href="https://forms.gle/5hHsFP3Adtadzdqs6">register here</a>-->
+=======
+>>>>>>> c38c8a6a15baf9d135f376a3ee8efbca145602a6
           </div>
         </article>
     {% endfor %}

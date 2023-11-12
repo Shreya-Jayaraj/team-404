@@ -10,7 +10,8 @@ from django.views.generic import (
 )
 
 def home(request):
-    context = { 'events' : Event.objects.all()}
+    events = { 'events' : Event.objects.all()}
+    context= {'events': events}
     return render(request,'events/home.html', context)
 
 class EventListView(ListView):
@@ -24,15 +25,7 @@ class EventDetailView(DetailView):
 
 class EventCreateView(LoginRequiredMixin,CreateView):
     model = Event
-    fields = ['title','content','date']
-
-    def form_valid(self, form):
-        form.instance.organization = self.request.user
-        return super().form_valid(form)
-
-class EventUpdateView(LoginRequiredMixin,UpdateView):
-    model = Event
-    fields = ['title','content','date']
+    fields = ['title','content','date','image']
 
     def form_valid(self, form):
         form.instance.organization = self.request.user
@@ -40,7 +33,7 @@ class EventUpdateView(LoginRequiredMixin,UpdateView):
 
 class EventUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Event
-    fields = ['title', 'content','date']
+    fields = ['title', 'content','date','image']
 
     def form_valid(self, form):
         form.instance.organization = self.request.user

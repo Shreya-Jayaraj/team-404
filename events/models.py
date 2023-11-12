@@ -8,10 +8,10 @@ class Event(models.Model):
     date = models.DateField()
     
     organization = models.ForeignKey(User, on_delete=models.CASCADE)
+    image = models.ImageField(default = 'default.jpg', upload_to = 'events_pics')
 
     def __str__(self):
         return self.title
     
     def get_absolute_url(self):
         return reverse('event-detail', kwargs={'pk':self.pk})
-
