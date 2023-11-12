@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'events/main.css' %}">
 
     {% if title %}
-        <title>EventVox.com {{ title }}</title>
+        <title>EventVox {{ title }}</title>
     {% else %}
-        <title>EventVox.com</title>
+        <title>EventVox</title>
     {% endif %}
 </head>
 <body>
@@ -41,7 +41,7 @@
                 <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
               {% else %}
                 <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Host an Event?</a>
               {% endif %}
             </div>
           </div>
@@ -49,7 +49,6 @@
       </nav>
     </header>
     <main role="main" class="container">
-      <div class="row">
         <div class="col-md-8">
           {% if messages %}
             {% for message in messages %}
@@ -65,7 +64,7 @@
             <h3>More</h3>
             <p class='text-muted'>
               <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Completed Events</li>
+                <li class="list-group-item list-group-item-light" >Completed Events</li>
                 <li class="list-group-item list-group-item-light">Announcements</li>
                 <li class="list-group-item list-group-item-light">Calendars</li>
               </ul>
