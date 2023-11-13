@@ -17,9 +17,8 @@
         </div>
         <h2 class="article-title">{{ object.title }}</h2>
         <p class="article-content">{{ object.content }}</p>
-        <p class="article-content">{{ object.link }}</p>
-        
-
+        <p class="article-content">Register Here:</p>
+        <a class="article-content" href="{{ object.link }}">  {{ object.link }}</a>
         </div>
     </article>
 {% endblock content %}
