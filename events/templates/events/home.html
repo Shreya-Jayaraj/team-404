@@ -13,8 +13,6 @@
               <small class="text-muted"> Happening On : {{ event.date|date:"F d, Y" }}</small>  
             </div>
             <h2><a class="article-title" href="{% url 'event-detail' event.id %}">{{ event.title }}</a></h2>
-            <p class="article-content">{{ event.content }}</p>
-           
           </div>
         </article>
     {% endfor %}
