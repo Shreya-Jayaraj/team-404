@@ -53,18 +53,18 @@ Team-404
 
 
 ## How to configure
-1. Install Python
-2. Install Virtual Environment (optional but recommended):
-code - python -m venv venv
-	Activate the virtual environment
-	Windows - .\venv\Scripts\activate
-	macOS/Linux - source venv/bin/activate
-3. Install Django
+1. Install Python  
+2. Install Virtual Environment (optional but recommended):  
+code - python -m venv venv  
+	--Activate the virtual environment  
+		Windows - .\venv\Scripts\activate  
+		macOS/Linux - source venv/bin/activate  
+3. Install Django  
 code-pip install django
 
 ## How to Run
-1. Run Migrations
-code - python manage.py migrate
-2. Run the Development Server
-code - python manage.py runserver
-Your Django application should now be accessible at http://127.0.0.1:8000/ in your web browser.
+1. Run Migrations  
+code - python manage.py migrate  
+2. Run the Development Server  
+code - python manage.py runserver  
+Your Django application should now be accessible at http://127.0.0.1:8000/ in your web browser.  
