@@ -43,7 +43,7 @@ Team-404
 
 **Routing and Views:** Django uses URL patterns to route requests to the appropriate views. Views are Python functions or classes that handle user requests, retrieve necessary data from the database, and render the appropriate templates. 
 
-Video of the project demo : https://drive.google.com/file/d/1OGBZ6-UBjNGSzmA9RSmRKhFhwvYtrS9V/view?usp=sharing
+Video of the project demo : [https://drive.google.com/file/d/1SNTCUEwGhQ9UA4z5kr67ryo_KDy0CDw3/view?usp=drive_link]
 
 ## Libraries used
 1. Pip package installer must be installed from python
