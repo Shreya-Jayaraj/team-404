@@ -21,7 +21,7 @@ EventVox aims to create a user-friendly environment that caters to both event or
 4. Diya Pratheep [https://github.com/NotaWhiteHatJr]
    
 ## Team Id
-Team-404
+team-404
 
 ## Link to product walkthrough
 [https://drive.google.com/file/d/1OGBZ6-UBjNGSzmA9RSmRKhFhwvYtrS9V/view?usp=sharing]
