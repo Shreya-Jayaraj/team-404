@@ -1,21 +1,55 @@
 ![StackUp Banner]([https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg])
 # Project Name
-Long Description about project. This project do that. This project is awesome...
+**EventVox** is a comprehensive event listing platform designed to streamline the organization and participation in various events hosted at a college campus. 
+
+The platform offers a range of features to enhance the user experience:
+
+**Event Listing and Description:** Users can easily view a curated list of events along with detailed descriptions. This feature enables attendees to make informed decisions about which events to participate in.
+
+**User Authentication:** EventVox provides a secure user authentication system, allowing individuals to sign up and log in to the platform. This feature ensures that users have personalized access to the platform's functionalities and their event-related activities.
+
+**Event Management for Registered Users:** Registered users have the capability to create events. They can also update/delete events that they host. This functionality empowers event organizers to efficiently manage their events, keeping the information accurate and up-to-date for potential attendees.
+
+**About Page:** The platform includes an informative "About" page that provides users with background information about EventVox. This page may detail the platform's mission, vision, team, or any other relevant information that enhances user trust and understanding.
+
+EventVox aims to create a user-friendly environment that caters to both event organizers and attendees. By combining event listing, user authentication, event creation, and an informative about page, the platform ensures a seamless and engaging experience for all users involved in the event management process.
+
 ## Team members
 1. Devika Rajeevan [https://github.com/mummylovestocode]
 2. Shreya Jayaraj [https://github.com/Shreya-Jayaraj]
 3. Amarthya Shekhar [https://github.com/amarthya01]
 4. Diya Pratheep [https://github.com/NotaWhiteHatJr]
+   
 ## Team Id
-Team id here
+Team-404
+
 ## Link to product walkthrough
 [link to video]
+
 ## How it Works ?
 1. Explaining the working of project
 2. Embed video of project demo
+
 ## Libraries used
-Library Name - Version
+1. Pip package installer must be installed from python
+   Code - python3 get-pip.py
+3. Pillow library from pip in python has to be installed.
+   Code - pip install pillow
+
+
 ## How to configure
-Instructions for setting up project
+1. Install Python
+2. Install Virtual Environment (optional but recommended):
+code - python -m venv venv
+	Activate the virtual environment
+	Windows - .\venv\Scripts\activate
+	macOS/Linux - source venv/bin/activate
+3. Install Django
+code-pip install django
+
 ## How to Run
-Instructions for running
+1. Run Migrations
+code - python manage.py migrate
+2. Run the Development Server
+code - python manage.py runserver
+Your Django application should now be accessible at http://127.0.0.1:8000/ in your web browser.
