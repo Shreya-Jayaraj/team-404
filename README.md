@@ -28,6 +28,7 @@ Team-404
 
 ## How it Works ?
 **Working of project**
+
 **User Registration and Authentication:** Users access the EventVox platform and have the option to sign up or log in. Django handles user registration and authentication through its built-in authentication system. When a user signs up, their information is stored securely in the database.
 
 **Event Listing:** Users can view a list of events on the platform. Django retrieves event information from the database and dynamically generates the event list page.
